@@ -1,0 +1,737 @@
+
+  <style>
+
+.input-1{
+    display: inline-block;
+    border:3px solid gray ;
+    height: 40px;
+   width:0px ;
+    flex:1 ;
+    padding-left:10px ;
+    font-size:16px ;
+   box-shadow:inset 1px 2px 2px rgb(0,0,0.15) ;
+border-radius:2px ;
+
+}
+
+   .input-1::placeholder{
+    font-family: roboto,arial;
+    font-size:16px;
+    
+   }
+   .search-bar{
+   width:80px ;
+   background-color:white ;
+   position: fixed;
+    left:0;
+    bottom:0;
+    top:100px
+    
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.div-2{
+    display: inline-block ;
+    position: relative;
+  }
+  .heart-k{
+    display: block;
+    width:446px;
+    margin-top:30px ;
+    z-index:0 ;
+    border-radius:20px ;
+opacity:1;
+ transition: opacity 2s; 
+}
+.heart-k:hover{
+    opacity: 1;
+}
+   
+p{
+    line-height:5px ;
+        font-family:roboto, arial;
+   
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   .p-1{
+       padding-top: 0;
+       font-weight: 600; 
+    }
+    .p-2{
+padding-bottom:40px;
+font-weight: 50;
+color:rgb(96,96,96)
+    }
+    .p-3{
+      color:rgb(96,96,96)  
+    }
+    
+    .img-3{
+        display:inline-block;
+        width:50px;
+        height:50px ;
+       border-radius:100px ;
+        margin-top: 10px;
+    }
+    .p-set{
+        margin-left:0 ;
+        margin-top: 0;
+        vertical-align:top;
+        display:inline-block ;
+    }
+    .div-3{
+        display:inline-block ;
+        width:50px;
+        vertical-align:top;
+    
+
+    }
+    .div-4{
+        display:inline-block ;
+        width:470px ;
+        
+
+    }
+    .div-5{
+        display:inline-block;
+    }
+     
+    
+    
+    .grid-1{
+      grid-template-columns: 50px 1fr 1fr;
+        display:grid
+        
+    }
+    .another{
+        display: inline-block;
+        margin-left:10px ;
+        position:relative;
+    }
+    .another-1{
+        display:inline-block;
+        margin-left:10px;
+        position:relative;
+    }
+    .another-2{
+        display: inline-block;
+        margin-left:0 ;
+        position:relative;
+    }
+    .another-3{
+        display:inline-block;
+        margin-left: 10px;
+        position: relative;
+    }
+    .another-4{
+        display:inline-block;
+        margin-left:10px ;
+        position: relative;
+    }
+    .header{
+        height: 100px;
+        display:flex;
+        flex-direction:row ;
+        justify-content: space-between;
+  position: fixed;
+  top:0 ;
+  left:0 ;
+  right:0 ;
+  background-color:white ;
+border-bottom-width:3px  ;
+border-bottom-style:solid  ;
+border-bottom-color:silver ;
+z-index:200;
+
+    }
+    .left-section{
+    
+        width:300px;
+        display: flex;
+        align-items: center;
+    }
+    .menu-icon{
+        height: 20px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .youtube-logo{
+        width:200px ;
+        height:30px
+        
+    }
+    .middle-section{
+        
+        flex: 1;
+        margin-left: 70px;
+        margin-right:35px ;
+      max-width: 750px;
+    display: flex;
+    align-items: center;
+    }
+    .search-icon{
+        height:25px;
+        margin-top: 4px;
+    }
+    .search-button{
+        height:40px ;
+        width:66px ;
+        border: 1px solid gray;
+        margin-left:-1px ;
+        margin-right:10px ;
+       position: relative;
+      
+
+    }
+.search-button
+.base-s{
+        position: absolute;
+        background-color:gray ;
+     padding-top:4px;
+     padding-bottom:4px ;
+  padding-left:8px ;
+   padding-right:8px ;
+   color: aliceblue;
+   border-radius:2px ;
+   font-size:12px;
+   bottom:-26px ;
+   transition:opacity 0.5s ;
+   opacity:0 ;
+}
+.search-button:hover
+.base-s{
+       opacity:1 ;
+        
+    }
+    .microphone{
+        height:30px;
+        
+    } 
+    .micro-button{
+        height:40px ;
+        width:40px;
+        border-radius:20px ;
+        border:none ;
+        background-color:hsl(0, 4%, 82%) ;
+       position: relative; 
+    } 
+    .micro-button
+    .voice-s{
+        position: absolute;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        background-color:gray ;
+     padding-top:4px;
+     padding-bottom:4px ;
+  padding-left:8px ;
+   padding-right:8px ;
+   color: aliceblue;
+   border-radius:2px ;
+   font-size:12px;
+   bottom:-26px ;
+   transition:opacity 0.5s ;
+   opacity:0;
+   white-space:nowrap ;
+    }
+    .micro-button:hover
+    .voice-s{
+        opacity:1 ;
+    }
+
+    .right-section{
+        
+        width:220px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink:0 ;
+    }
+    .microphone{
+        height:30px;
+
+    }
+    
+    .video-icon{
+        width:40px ;
+        height:24px;
+    }
+    .container{
+        position: relative;
+        width:50px ;
+    }
+    .container
+    .base-v{
+        position: absolute;
+        justify-content:center ;
+        align-items: center;
+        background-color:gray ;
+     padding-top:4px;
+     padding-bottom:4px ;
+  padding-left:8px ;
+   padding-right:8px ;
+   color: aliceblue;
+   border-radius:2px ;
+   font-size:12px;
+   bottom:-26px ;
+   transition:opacity 0.5s ;
+   opacity:0;
+   white-space:nowrap ;  
+    }
+    .container:hover
+    .base-v{
+        opacity:1 ;
+    }
+    .notify-icon{
+        width:40px ;
+        height:24px;
+         
+
+    }
+    
+        .my-pics{
+       height:42px ;
+        width:42px;
+        border-radius:21px;
+        margin-right:20px ;        
+    }
+    
+   
+    body{
+        height:1000px ;
+        padding-top:70px ;
+        padding-left:100px ;
+        background-color:whitesmoke;
+    
+    }
+    
+
+    
+  .time{
+    position:absolute;
+    background-color:black;
+    color: beige;
+    bottom:122px ;
+    right:10px ;
+    font-family:roboto,arial;
+    font-size:12px ;
+    font-weight:500;
+    padding-left:4px ;
+    padding-top:4px ;
+    padding-right:4px ;
+    padding-bottom: 4px;
+    border-radius:20px ;
+  }
+  
+  .n-me{
+    position: relative;
+
+  }
+  .container
+  .base{
+position: absolute;
+        justify-content:center ;
+        align-items: center;
+        background-color:gray ;
+     padding-top:4px;
+     padding-bottom:4px ;
+  padding-left:8px ;
+   padding-right:8px ;    
+   color: aliceblue;
+   border-radius:2px ;
+   font-size:12px;
+   bottom:-26px ;
+   transition:opacity 0.5s ;
+   opacity:0;
+   white-space:nowrap ;   
+  }
+  .container:hover
+  .base{
+    opacity:1;
+  }
+  .number{
+    position: absolute;
+    background-color:red ;
+    color:white ;
+    top:-5px;
+    right:0;
+    font-family:roboto,arial ;
+    font-size:12px ;
+    padding-left: 5px ;
+    padding-right:5px ;
+    padding-top:2px ;
+    padding-bottom:2px ;
+    border-radius: 20px;
+  }
+.pic{
+    position: relative;
+    
+}
+.container
+.base-p{
+    position: absolute;
+        justify-content:center ;
+        align-items: center;
+        background-color:gray ;
+     padding-top:4px;
+     padding-bottom:4px ;
+  padding-left:8px ;
+   padding-right:8px ;    
+   color: aliceblue;
+   border-radius:2px ;
+   font-size:12px;
+   bottom:-26px ;
+   transition:opacity 0.5s ;
+   opacity:0;
+   white-space:nowrap ;   
+}
+.container:hover
+.base-p{
+    opacity:1;
+}
+
+.my-n{
+    position: absolute;
+    background-color:red ;
+    color:white ;
+    top:-4px;
+    right:10px;
+    
+    font-family:roboto,arial ;
+    font-size:12px ;
+    padding-left: 5px ;
+    padding-right:5px ;
+    padding-top:2px ;
+    padding-bottom:2px ;
+    border-radius: 20px;
+}
+.bar-link {
+    background-color:white ;
+    height:75px;
+   position:relative ; 
+   left:20px ;
+
+    
+}
+.bar-link:hover{
+    background-color:lightgray ;
+
+}
+.icon{
+    width:30px ;
+    
+}
+.word{
+    font-family:roboto,arial ;
+    font-size:12px ;
+    font-weight: 500;
+}
+
+
+  </style>
+    
+
+    
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        
+    
+           
+           
+    </head>
+        <title>
+            youtube.com
+        </title>
+    
+        <body>
+            <div class="header">
+                <div class="left-section">
+                    <img class="menu-icon"src="C:\Users\HP\Documents\button.html\menu-icon.png"ait="menu-icon">
+                    <img class="youtube-logo"src="C:\Users\HP\Documents\button.html\youtube-logo.jpg"ait="youtube-logo">
+                </div>
+                <div class="middle-section">
+             <input class="input-1" type="text" placeholder="SEARCH">
+               <button class="search-button">
+            <img class="search-icon"src="C:\Users\HP\Documents\button.html\search-icon.png"ait="search-icon">
+            <div class="base-s">search</div>
+        </button>   
+           
+            <button class="micro-button"><img class="microphone" src="C:\Users\HP\Documents\button.html\microphone.png" ait="microphone">
+            <div class="voice-s">voice search</div>
+            </button>
+
+        </div>
+            <div class="right-section">
+             <div class="container">
+                <img class="video-icon"src="C:\Users\HP\Documents\button.html\video-icon.png"ait="video-icon">
+                <div class="base-v">create</div>
+             </div>
+             <div class="container">
+    <div class="n-me"><img class="notify-icon"src="C:\Users\HP\Documents\button.html\notify-icon.jpeg"ait="notify-icon">
+        <div class="number">3</div>
+    <div class="base">alert</div>
+    </div>
+ 
+</div>
+<div class="container">
+         <div class="pic">
+      <img class="my-pics"src="C:\Users\HP\Documents\button.html\my-pics.jpg"ait="my-pics">
+      <div class="my-n">6</div>
+      <div class="base-p">email</div>
+         </div>
+         </div>    
+    </div>
+            <div class="search-bar">
+              <div class="bar-link"> 
+              <img class="icon"src="C:\Users\HP\Documents\home-icon.png"ait="home-icon">
+              <div class="word">HOME</div>
+            </div>
+              <div class="bar-link">
+                <img class="icon"src="C:\Users\HP\Documents\main-sub.png"ait="main-sub">
+                <div class="word">SUBSCRIBE</div>
+            </div>
+              <div class="bar-link">
+                <img class="icon"src="C:\Users\HP\Documents\circle-youtube.png"ait="circle-youtube">
+                <div class="word">LIBRARY</div>
+            </div> 
+              <div class="bar-link">
+                <img class="icon"src="C:\Users\HP\Documents\live-icon.png"ait="live-icon">
+                <div class="word">LIVE</div>
+            </div> 
+              <div class="bar-link">
+                <img class="icon"src="C:\Users\HP\Documents\youtube-tv.png"ait="youtube-tv">
+                <div class="word">EXPLORE</div>
+            </div>
+              <div class="bar-link">
+                <img class="icon"src="C:\Users\HP\Documents\you-icon.png"ait="you-top">
+                <div class="word">YOU</div>
+            </div> 
+           <div class="bar-link">
+            <img class="icon"src="C:\Users\HP\Documents\short-icon.png"ait="short-icon">
+            <div class="word">SHORT</div>
+        </div>
+            </div>
+            </div>
+            
+            <div class="div-2">
+            <div><img class="heart-k" src="C:\Users\HP\Documents\button.html\heart-img.jpeg"ait="heat-img"></div>
+            <div class="time">2:00</div>
+            <div class="grid-1">
+            <div class="div-4">
+                <div class="div-3">
+                    <img class="img-3"src="C:\Users\HP\Pictures\AdobeStock_386899661_Preview.jpeg"ait="img-3"></div>
+           <div class="p-set"> <p class="p-1">REGENERATIVE TISSUE MACHINE</p>
+            <P CLASS="P-2">BIOMEDICAL ENGINEERING</P>
+            <P CLASS="P-3">3.4M VIEWS &#183; 3 MONTHS AGO</P>
+           </div>
+            </div>
+            </div>
+            </div>
+        </div>
+            <div class="another">
+           <div class="time">4:30</div>
+                <div><img class="heart-k"src="C:\Users\HP\Documents\button.html\b-3.jpeg"ait="b-3"></div>
+            <div class="grid-1">
+            <div class="div-4">
+                <div class="div-3">
+                    <img class="img-3"src="C:\Users\HP\Pictures\AdobeStock_386899661_Preview.jpeg"ait="img-3"></div>
+           <div class="p-set"> <p class="p-1">REGENERATIVE TISSUE MACHINE</p>
+            <P CLASS="P-2">BIOMEDICAL ENGINEERING</P>
+            <P CLASS="P-3">3.4M VIEWS &#183; 3 MONTHS AGO</P>
+           </div>
+        </div>
+            </div>
+            </div>
+            </div> 
+            <div class="another-1">
+              <div class="time">1:20</div>
+                <div><img class="heart-k" src="C:\Users\HP\Documents\button.html\b-5.jpeg"ait="b-5"></div>
+                <div class="grid-1">
+                <div class="div-4">
+                    <div class="div-3">
+                        <img class="img-3"src="C:\Users\HP\Pictures\AdobeStock_386899661_Preview.jpeg"ait="img-3"></div>
+               <div class="p-set"> <p class="p-1">REGENERATIVE TISSUE MACHINE</p>
+                <P CLASS="P-2">BIOMEDICAL ENGINEERING</P>
+                <P CLASS="P-3">3.4M VIEWS &#183; 3 MONTHS AGO</P>
+               </div>
+            </div>
+                </div>
+                </div>
+                </div>   
+                <div class="another-2">
+                    <div class="time">2:30</div>
+                    <div><img class="heart-k" src="C:\Users\HP\Documents\button.html\b-7.jpeg" ait="b-7"></div>
+                    <div class="grid-1">
+                    <div class="div-4">
+                        <div class="div-3">
+                            <img class="img-3"src="C:\Users\HP\Pictures\AdobeStock_386899661_Preview.jpeg"ait="img-3"></div>
+                   <div class="p-set"> <p class="p-1">REGENERATIVE TISSUE MACHINE</p>
+                    <P CLASS="P-2">BIOMEDICAL ENGINEERING</P>
+                    <P CLASS="P-3">3.4M VIEWS &#183; 3 MONTHS AGO</P>
+                   </div>
+                </div>
+                    </div>
+                    </div>
+                    </div> 
+                    <div class="another-3">
+                        <div class="time">7:00</div>
+                        <div><img class="heart-k" src="C:\Users\HP\Documents\button.html\b-11.jpeg"ait="b-11"></div>
+                        <div class="grid-1">
+                        <div class="div-4">
+                            <div class="div-3">
+                                <img class="img-3"src="C:\Users\HP\Pictures\AdobeStock_386899661_Preview.jpeg"ait="img-3"></div>
+                       <div class="p-set"> <p class="p-1">REGENERATIVE TISSUE MACHINE</p>
+                        <P CLASS="P-2">BIOMEDICAL ENGINEERING</P>
+                        <P CLASS="P-3">3.4M VIEWS &#183; 3 MONTHS AGO</P>
+                       </div>
+                    </div>
+                        </div>
+                        </div>
+                        </div> 
+                        <div class="another-4">
+                            <div class="time">10:22</div>
+                            <div><img class="heart-k" src="C:\Users\HP\Documents\button.html\heart-img.jpeg"ait="heat-img"></div>
+                            <div class="grid-1">
+                            <div class="div-4">
+                                <div class="div-3">
+                                    <img class="img-3"src="C:\Users\HP\Pictures\AdobeStock_386899661_Preview.jpeg"ait="img-3"></div>
+                           <div class="p-set"> <p class="p-1">REGENERATIVE TISSUE MACHINE</p>
+                            <P CLASS="P-2">BIOMEDICAL ENGINEERING</P>
+                            <P CLASS="P-3">3.4M VIEWS &#183; 3 MONTHS AGO</P>
+                           </div>
+                        </div>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="div-2">
+                                <div><img class="heart-k" src="C:\Users\HP\Documents\button.html\heart-img.jpeg"ait="heat-img"></div>
+                                <div class="time">2:00</div>
+                                <div class="grid-1">
+                                <div class="div-4">
+                                    <div class="div-3">
+                                        <img class="img-3"src="C:\Users\HP\Pictures\AdobeStock_386899661_Preview.jpeg"ait="img-3"></div>
+                               <div class="p-set"> <p class="p-1">REGENERATIVE TISSUE MACHINE</p>
+                                <P CLASS="P-2">BIOMEDICAL ENGINEERING</P>
+                                <P CLASS="P-3">3.4M VIEWS &#183; 3 MONTHS AGO</P>
+                               </div>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                                <div class="another">
+                               <div class="time">4:30</div>
+                                    <div><img class="heart-k"src="C:\Users\HP\Documents\button.html\b-3.jpeg"ait="b-3"></div>
+                                <div class="grid-1">
+                                <div class="div-4">
+                                    <div class="div-3">
+                                        <img class="img-3"src="C:\Users\HP\Pictures\AdobeStock_386899661_Preview.jpeg"ait="img-3"></div>
+                               <div class="p-set"> <p class="p-1">REGENERATIVE TISSUE MACHINE</p>
+                                <P CLASS="P-2">BIOMEDICAL ENGINEERING</P>
+                                <P CLASS="P-3">3.4M VIEWS &#183; 3 MONTHS AGO</P>
+                               </div>
+                            </div>
+                                </div>
+                                </div>
+                                </div> 
+                                <div class="another-1">
+                                  <div class="time">1:20</div>
+                                    <div><img class="heart-k" src="C:\Users\HP\Documents\button.html\b-5.jpeg"ait="b-5"></div>
+                                    <div class="grid-1">
+                                    <div class="div-4">
+                                        <div class="div-3">
+                                            <img class="img-3"src="C:\Users\HP\Pictures\AdobeStock_386899661_Preview.jpeg"ait="img-3"></div>
+                                   <div class="p-set"> <p class="p-1">REGENERATIVE TISSUE MACHINE</p>
+                                    <P CLASS="P-2">BIOMEDICAL ENGINEERING</P>
+                                    <P CLASS="P-3">3.4M VIEWS &#183; 3 MONTHS AGO</P>
+                                   </div>
+                                </div>
+                                    </div>
+                                    </div>
+                                    </div>   
+                                    <div class="another-2">
+                                        <div class="time">2:30</div>
+                                        <div><img class="heart-k" src="C:\Users\HP\Documents\button.html\b-7.jpeg" ait="b-7"></div>
+                                        <div class="grid-1">
+                                        <div class="div-4">
+                                            <div class="div-3">
+                                                <img class="img-3"src="C:\Users\HP\Pictures\AdobeStock_386899661_Preview.jpeg"ait="img-3"></div>
+                                       <div class="p-set"> <p class="p-1">REGENERATIVE TISSUE MACHINE</p>
+                                        <P CLASS="P-2">BIOMEDICAL ENGINEERING</P>
+                                        <P CLASS="P-3">3.4M VIEWS &#183; 3 MONTHS AGO</P>
+                                       </div>
+                                    </div>
+                                        </div>
+                                        </div>
+                                        </div> 
+                                        <div class="another-3">
+                                            <div class="time">7:00</div>
+                                            <div><img class="heart-k" src="C:\Users\HP\Documents\button.html\b-11.jpeg"ait="b-11"></div>
+                                            <div class="grid-1">
+                                            <div class="div-4">
+                                                <div class="div-3">
+                                                    <img class="img-3"src="C:\Users\HP\Pictures\AdobeStock_386899661_Preview.jpeg"ait="img-3"></div>
+                                           <div class="p-set"> <p class="p-1">REGENERATIVE TISSUE MACHINE</p>
+                                            <P CLASS="P-2">BIOMEDICAL ENGINEERING</P>
+                                            <P CLASS="P-3">3.4M VIEWS &#183; 3 MONTHS AGO</P>
+                                           </div>
+                                        </div>
+                                            </div>
+                                            </div>
+                                            </div> 
+                                            <div class="another-4">
+                                                <div class="time">10:22</div>
+                                                <div><img class="heart-k" src="C:\Users\HP\Documents\button.html\heart-img.jpeg"ait="heat-img"></div>
+                                                <div class="grid-1">
+                                                <div class="div-4">
+                                                    <div class="div-3">
+                                                        <img class="img-3"src="C:\Users\HP\Pictures\AdobeStock_386899661_Preview.jpeg"ait="img-3"></div>
+                                               <div class="p-set"> <p class="p-1">REGENERATIVE TISSUE MACHINE</p>
+                                                <P CLASS="P-2">BIOMEDICAL ENGINEERING</P>
+                                                <P CLASS="P-3">3.4M VIEWS &#183; 3 MONTHS AGO</P>
+                                               </div>
+                                            </div>
+                                                </div>
+                                                </div>
+                                                </div> 
+                    
+                                        
+                    </body>
+    </head>
+</html>

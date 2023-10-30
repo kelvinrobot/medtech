@@ -1,0 +1,12 @@
+body{
+    font: size 22px;
+    font-family: arial,Arial, Helvetica, sans-serif;
+    line-height: 1.5
+}
+.container{ 
+    border:2px dashed red;
+    font-size: 1.5rem;
+    margin-top: auto;
+    padding: 1.5;
+    color: blue;
+}

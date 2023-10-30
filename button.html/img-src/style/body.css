@@ -1,0 +1,103 @@
+.input-1{
+    border: 3px solid black;
+    display: block;
+    height: 40px;
+    width:800px; 
+    margin-top:50px;
+    border-radius:10px ;
+    margin-left: 150px;
+    background-color: white;
+   }
+.div-2{
+    display: inline-block ;
+  }
+  .heart-k{
+    display: block;
+    width:470px;
+    margin-top:10px ;
+
+   }
+   p{
+    line-height:5px ;
+        font-family:roboto, arial 
+}
+*{
+    background-color: red ;
+  }
+
+   
+   .p-1{
+       padding-top: 0;
+       font-weight: 600; 
+    }
+    .p-2{
+padding-bottom:40px;
+font-weight: 50;
+color:rgb(96,96,96)
+    }
+    .p-3{
+      color:rgb(96,96,96)  
+    }
+    
+    .img-3{
+        display:inline-block;
+        width:50px;
+        height:50px ;
+       border-radius:100px ;
+        margin-top: 10px;
+    }
+    .p-set{
+        margin-left:0 ;
+        margin-top: 0;
+        vertical-align:top;
+        display:inline-block ;
+    }
+    .div-3{
+        display:inline-block ;
+        width:50px;
+        vertical-align:top;
+    
+
+    }
+    .div-4{
+        display:inline-block ;
+        width:470px ;
+        
+
+    }
+    .div-5{
+        display:inline-block;
+    }
+     
+    
+    
+    .grid-1{
+      grid-template-columns: 50px 1fr 1fr;
+        display:grid
+        
+    }
+    .another{
+        display: inline-block;
+        margin-left:10px ;
+    }
+    .another-1{
+        display:inline-block;
+        margin-left:10px;
+    }
+    .another-2{
+        display: inline-block;
+        margin-left:0 ;
+    }
+    .another-3{
+        display:inline-block;
+        margin-left: 10px;
+    }
+    .another-4{
+        display:inline-block;
+        margin-left:10px ;
+    }
+    .all{
+        display: inline-block;
+    }
+
+      
